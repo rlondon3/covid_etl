@@ -13,7 +13,7 @@ def write_csv(dataset):
         if os.path.exists(csv_file_path):
             os.remove(csv_file_path)
 
-        # Convert the merged data into a CSV file
+        # Convert the dataset into a CSV file
         with open(csv_file_path, mode='w', newline='') as csv_file:
             csv_writer = csv.DictWriter(csv_file, fieldnames=dataset[0].keys())
             csv_writer.writeheader()
