@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+src/PyIO/__init__.py
+src/PyIO/example/__init__.py
+src/PyIO/example/custom_PyIOlearn.py
+src/Python_IO.egg-info/PKG-INFO
+src/Python_IO.egg-info/SOURCES.txt
+src/Python_IO.egg-info/dependency_links.txt
+src/Python_IO.egg-info/requires.txt
+src/Python_IO.egg-info/top_level.txt
