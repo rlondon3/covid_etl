@@ -28,5 +28,17 @@ def filter_data(data_set_1, data_set_2):
                 "country": data_entry_1['Country']
             }
             merged_data.append(merged_entry)
-            write_csv(merged_data)
+    # Sort merged_data by Desc dates
+    sort_merged_by_date = sorted(
+        merged_data,
+        key=lambda x: x['date'], reverse=False
+    )
+    # Insert ids into dictionaries
+    covid_data = []
+    for index, entry in enumerate(sort_merged_by_date, start=1):
+        if entry:
+            new_data = {'id': index}
+            new_data.update(entry)
+            covid_data.append(new_data)
+    write_csv(covid_data)
             
