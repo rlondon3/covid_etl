@@ -1,21 +1,6 @@
-import requests
-import csv
-import io
 from transformations.transform_data import filter_data
 from create_csv.write_csv import write_csv
-
-# Function to fetch and parse CSV data from a URL
-def fetch_and_parse_csv(url):
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        csv_data = response.text
-        csv_file = io.StringIO(csv_data)
-        csv_reader = csv.DictReader(csv_file)
-        data_list = list(csv_reader)
-        return data_list
-    else:
-        return []
+from create_csv.fetch_and_parse_csv import fetch_and_parse_csv
 
 def extract():
     # Fetch NYT data
