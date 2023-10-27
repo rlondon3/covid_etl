@@ -8,7 +8,7 @@ def write_csv(dataset):
         folder_path = "./csv"  # Replace with your actual folder path
 
         # Create a CSV file path
-        csv_file_path = f"{folder_path}/merged_covid_data.csv"
+        csv_file_path = f"{folder_path}/us_covid_data.csv"
         # Check if the file already exists and delete it. Data will be updated by NY Times and JHU daily
         if os.path.exists(csv_file_path):
             os.remove(csv_file_path)

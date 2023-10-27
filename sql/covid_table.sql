@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS covid (date, recovered, confirmed, cases, deaths, country)
