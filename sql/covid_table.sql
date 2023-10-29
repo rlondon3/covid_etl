@@ -1,1 +1,0 @@
-CREATE TABLE IF NOT EXISTS covid (date DATE, recovered INT, confirmed BIGINT, cases BIGINT, deaths BIGINT, country VARCHAR(50));

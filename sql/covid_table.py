@@ -1,0 +1,1 @@
+CREATE_COVID_DATA_TABLE = 'CREATE TABLE IF NOT EXISTS covid_data (date DATE, recovered INT, confirmed_cases BIGINT, deaths BIGINT, country VARCHAR(50))'

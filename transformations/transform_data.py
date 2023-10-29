@@ -22,7 +22,7 @@ def filter_data(data_set_1, data_set_2):
             merged_entry = {
                 "date": datetime.strptime(date, '%Y-%m-%d').date(),
                 "recovered": int(data_entry_1["Recovered"]),
-                "confirmed cases": int(data_entry_2["cases"]),
+                "confirmed_cases": int(data_entry_2["cases"]),
                 "deaths": int(data_entry_2["deaths"]),
                 "country": data_entry_1['Country']
             }

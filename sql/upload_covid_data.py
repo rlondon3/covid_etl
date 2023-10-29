@@ -1,0 +1,1 @@
+UPLOAD = "COPY covid_data FROM 'csv/us_covid_data.csv' WITH (FORMAT csv, HEADER, DELIMITER ',');"
