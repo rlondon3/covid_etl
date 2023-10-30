@@ -28,5 +28,3 @@ def extract():
             'statusCode': 204,  # No content
             'body': "No data found for merging."
         }
-
-extract()

@@ -1,1 +1,0 @@
-UPLOAD = "COPY covid_data FROM STDIN WITH (FORMAT csv, HEADER, DELIMITER ',')"
