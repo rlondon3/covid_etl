@@ -1,1 +1,1 @@
-UPLOAD = "COPY covid_data FROM 'csv/us_covid_data.csv' WITH (FORMAT csv, HEADER, DELIMITER ',');"
+UPLOAD = "COPY covid_data FROM STDIN WITH (FORMAT csv, HEADER, DELIMITER ',')"

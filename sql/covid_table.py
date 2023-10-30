@@ -1,1 +1,2 @@
-CREATE_COVID_DATA_TABLE = 'CREATE TABLE IF NOT EXISTS covid_data (date DATE, recovered INT, confirmed_cases BIGINT, deaths BIGINT, country VARCHAR(50))'
+CREATE_COVID_DATA_TABLE = 'CREATE TABLE IF NOT EXISTS covid_data (id SERIAL PRIMARY KEY, date DATE, recovered INT, confirmed_cases BIGINT, deaths BIGINT, country VARCHAR(50));'
+TABLE_EXISTS = "SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'covid_data');"
